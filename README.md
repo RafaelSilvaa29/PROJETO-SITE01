@@ -1,7 +1,7 @@
 # PROJETO-SITE01
 🌐 Portfólio | Rafael Silva
 
-Este é o meu portfólio pessoal, desenvolvido para apresentar minhas habilidades, projetos e informações de contato como desenvolvedor moderno.
+Este é o meu portfólio pessoal, desenvolvido para apresentar minhas habilidades, projetos e informações de contato como desenvolvedor.
 O site foi construído com HTML, Tailwind CSS e JavaScript, trazendo interatividade, design responsivo e animações modernas.
 
 🚀 Funcionalidades
@@ -16,15 +16,15 @@ O site foi construído com HTML, Tailwind CSS e JavaScript, trazendo interativid
 
 📊 Seções organizadas:
 
-Início (Hero)
+- Início (Hero)
 
-Sobre Mim
+- Sobre Mim
 
-Habilidades Tecnológicas
+- Habilidades Tecnológicas
 
-Projetos Recentes
+- Projetos Recentes
 
-Contato
+- Contato
 
 📨 Formulário de contato com validação simples em JavaScript.
 
@@ -34,12 +34,12 @@ Contato
 
 🛠️ Tecnologias Utilizadas
 
-HTML5 – Estrutura da aplicação.
+- HTML5 – Estrutura da aplicação.
 
-Tailwind CSS – Estilização moderna e responsiva.
+- Tailwind CSS – Estilização moderna e responsiva.
 
-JavaScript (ES6+) – Interatividade e animações.
+- JavaScript (ES6+) – Interatividade e animações.
 
-Font Awesome – Ícones personalizados.
+- Font Awesome – Ícones personalizados.
 
-Google Fonts (Inter) – Tipografia elegante e legível.
+- Google Fonts (Inter) – Tipografia elegante e legível.
