@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Desenvolvedor Moderno</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#3B82F6',
+              secondary: '#10B981',
+              accent: '#F59E0B',
+              dark: '#1F2937',
+              light: '#F9FAFB'
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Animações personalizadas */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+      .animate-fade-in-up {
+        animation: fadeInUp 0.6s ease-out forwards;
+      }
+      .animate-float {
+        animation: float 3s ease-in-out infinite;
+      }
+      /* Glassmorphism effect */
+      .glass {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1F2937;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #3B82F6;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #2563EB;
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white min-h-screen">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full top-0 z-50 glass">
+      <nav class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <div class="text-2xl font-bold text-primary">
+            Portfólio<span class="text-secondary">.</span>
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a href="#home" class="hover:text-primary transition-colors">Início</a>
+            <a href="#about" class="hover:text-primary transition-colors">Sobre</a>
+            <a href="#skills" class="hover:text-primary transition-colors">Habilidades</a>
+            <a href="#projects" class="hover:text-primary transition-colors">Projetos</a>
+            <a href="#contact" class="hover:text-primary transition-colors">Contato</a>
+          </div>
+          <button class="md:hidden text-xl">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20">
+      <div class="container mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="animate-fade-in-up">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+              Olá, eu sou <span class="text-primary">RAFAEL SILVA</span>
+            </h1>
+            <p class="text-xl text-gray-300 mb-8">
+              Criando experiências digitais incríveis com as tecnologias mais modernas
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <button class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors transform hover:scale-105">
+                Ver Projetos
+              </button>
+              <button class="border border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                Download CV
+              </button>
+            </div>
+          </div>
+          <div class="animate-float hidden md:block">
+            <div class="relative">
+              <div class="absolute -inset-4 bg-primary opacity-20 rounded-full blur-xl"></div>
+              <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6166547f-906d-4a05-948c-a1c188577ccf.png"
+                alt="Foto de perfil do desenvolvedor com fundo moderno e elementos tech"
+                class="relative rounded-2xl w-full max-w-md mx-auto">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Sobre Mim</h2>
+          <p class="text-gray-300 max-w-2xl mx-auto">Conheça um pouco da minha jornada e paixão por desenvolvimento</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4bebcec6-fc4b-4a80-8dbc-3a79689e47a4.png"
+              alt="Desenvolvedor trabalhando em ambiente moderno com múltiplos monitores"
+              class="rounded-2xl w-full">
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-6">Desenvolvedor Full Stack & Entusiasta de Tecnologia</h3>
+            <p class="text-gray-300 mb-6">
+              Estou em busca da minha primeira experiência em desenvolvimento, motivado a aplicar meus conhecimentos teóricos na prática e a aprender continuamente. Tenho interesse em trabalhar com tecnologias atuais, colaborar em projetos desafiadores e desenvolver habilidades técnicas e interpessoais. Estou comprometido em crescer profissionalmente e contribuir positivamente para a equipe e os projetos em que estiver envolvido.
+            </p>
+            <div class="grid grid-cols-2 gap-6 mb-8">
+              <div>
+                <span class="text-primary text-2xl font-bold">6+</span>
+                <p class="text-gray-300">Projetos Concluídos</p>
+              </div>
+              <div>
+                <span class="text-primary text-2xl font-bold">1+</span>
+                <p class="text-gray-300">Anos de Experiência</p>
+              </div>
+              <div>
+                <span class="text-primary text-2xl font-bold">3+</span>
+                <p class="text-gray-300">Clientes Satisfeitos</p>
+              </div>
+              <div>
+                <span class="text-primary text-2xl font-bold">6+</span>
+                <p class="text-gray-300">Tecnologias Dominadas</p>
+              </div>
+            </div>
+            <button class="bg-secondary hover:bg-green-600 text-white px-6 py-2 rounded-lg transition-colors">
+              Saiba Mais
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Habilidades Tecnológicas</h2>
+          <p class="text-gray-300 max-w-2xl mx-auto">Domínio das tecnologias mais modernas do mercado</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Frontend Skills -->
+          <div class="glass p-6 rounded-2xl">
+            <div class="text-center mb-6">
+              <i class="fas fa-paint-brush text-4xl text-primary mb-4"></i>
+              <h3 class="text-xl font-semibold">Frontend</h3>
+            </div>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span>React.js</span>
+                  <span>70%</span>
+                </div>
+                <div class="w-full bg-gray-700 rounded-full h-2">
+                  <div class="bg-primary h-2 rounded-full" style="width: 95%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span>Vue.js</span>
+                  <span>50%</span>
+                </div>
+                <div class="w-full bg-gray-700 rounded-full h-2">
+                  <div class="bg-primary h-2 rounded-full" style="width: 85%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span>TypeScript</span>
+                  <span>50%</span>
+                </div>
+                <div class="w-full bg-gray-700 rounded-full h-2">
+                  <div class="bg-primary h-2 rounded-full" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Backend Skills -->
+          <div class="glass p-6 rounded-2xl">
+            <div class="text-center mb-6">
+              <i class="fas fa-server text-4xl text-secondary mb-4"></i>
+              <h3 class="text-xl font-semibold">Backend</h3>
+            </div>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span>Node.js</span>
+                  <span>50%</span>
+                </div>
+                <div class="w-full bg-gray-700 rounded-full h-2">
+                  <div class="bg-secondary h-2 rounded-full" style="width: 90%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span>Python</span>
+                  <span>80%</span>
+                </div>
+                <div class="w-full bg-gray-700 rounded-full h-2">
+                  <div class="bg-secondary h-2 rounded-full" style="width: 80%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span>PostgreSQL</span>
+                  <span>40%</span>
+                </div>
+                <div class="w-full bg-gray-700 rounded-full h-2">
+                  <div class="bg-secondary h-2 rounded-full" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- DevOps Skills -->
+          <div class="glass p-6 rounded-2xl">
+            <div class="text-center mb-6">
+              <i class="fas fa-cloud text-4xl text-accent mb-4"></i>
+              <h3 class="text-xl font-semibold">DevOps</h3>
+            </div>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span>Docker</span>
+                  <span>40%</span>
+                </div>
+                <div class="w-full bg-gray-700 rounded-full h-2">
+                  <div class="bg-accent h-2 rounded-full" style="width: 75%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span>AWS</span>
+                  <span>47%</span>
+                </div>
+                <div class="w-full bg-gray-700 rounded-full h-2">
+                  <div class="bg-accent h-2 rounded-full" style="width: 70%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span>Git</span>
+                  <span>85%</span>
+                </div>
+                <div class="w-full bg-gray-700 rounded-full h-2">
+                  <div class="bg-accent h-2 rounded-full" style="width: 95%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Projetos Recentes</h2>
+          <p class="text-gray-300 max-w-2xl mx-auto">Alguns dos meus trabalhos mais recentes e desafiadores</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div class="group glass rounded-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/484fd5cc-6e7d-40ee-9643-b22a28c76d23.png"
+              alt="Dashboard moderno de analytics com gráficos e métricas em tempo real"
+              class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Dashboard Analytics</h3>
+              <p class="text-gray-300 mb-4">Plataforma de analytics em tempo real com React e Node.js</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-primary bg-opacity-20 text-primary px-3 py-1 rounded-full text-sm">React</span>
+                <span class="bg-primary bg-opacity-20 text-primary px-3 py-1 rounded-full text-sm">Node.js</span>
+                <span class="bg-primary bg-opacity-20 text-primary px-3 py-1 rounded-full text-sm">MongoDB</span>
+              </div>
+              <div class="flex space-x-4">
+                <a href="#" class="text-primary hover:text-blue-300">
+                  <i class="fab fa-github"></i> Código
+                </a>
+                <a href="#" class="text-secondary hover:text-green-300">
+                  <i class="fas fa-external-link-alt"></i> Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="group glass rounded-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4e99209c-e16f-4b39-b9ca-966823dc1637.png"
+              alt="Aplicativo mobile de e-commerce com interface moderna e intuitiva"
+              class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">E-commerce Mobile</h3>
+              <p class="text-gray-300 mb-4">Aplicativo de comércio eletrônico com React Native</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-secondary bg-opacity-20 text-secondary px-3 py-1 rounded-full text-sm">React Native</span>
+                <span class="bg-secondary bg-opacity-20 text-secondary px-3 py-1 rounded-full text-sm">Firebase</span>
+                <span class="bg-secondary bg-opacity-20 text-secondary px-3 py-1 rounded-full text-sm">Stripe</span>
+              </div>
+              <div class="flex space-x-4">
+                <a href="#" class="text-primary hover:text-blue-300">
+                  <i class="fab fa-github"></i> Código
+                </a>
+                <a href="#" class="text-secondary hover:text-green-300">
+                  <i class="fas fa-external-link-alt"></i> Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="group glass rounded-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bae6f345-91b9-4499-8c0e-2b64432b5045.png"
+              alt="Sistema de gestão de tarefas com interface drag-and-drop e colaboração em tempo real"
+              class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Task Manager</h3>
+              <p class="text-gray-300 mb-4">Sistema de gestão de tarefas com colaboração em tempo real</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-accent bg-opacity-20 text-accent px-3 py-1 rounded-full text-sm">Vue.js</span>
+                <span class="bg-accent bg-opacity-20 text-accent px-3 py-1 rounded-full text-sm">Express</span>
+                <span class="bg-accent bg-opacity-20 text-accent px-3 py-1 rounded-full text-sm">Socket.io</span>
+              </div>
+              <div class="flex space-x-4">
+                <a href="#" class="text-primary hover:text-blue-300">
+                  <i class="fab fa-github"></i> Código
+                </a>
+                <a href="#" class="text-secondary hover:text-green-300">
+                  <i class="fas fa-external-link-alt"></i> Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <button class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+            Ver Todos os Projetos
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Entre em Contato</h2>
+          <p class="text-gray-300 max-w-2xl mx-auto">Vamos trabalhar juntos no seu próximo projeto!</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <h3 class="text-2xl font-semibold mb-6">Vamos Conversar</h3>
+            <p class="text-gray-300 mb-8">
+              Estou sempre aberto a discutir novos projetos, oportunidades criativas ou parcerias de trabalho. Entre em contato e vamos fazer algo incrível juntos!
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+                  <i class="fas fa-envelope text-primary"></i>
+                </div>
+                <div>
+                  <p class="text-gray-300">Email</p>
+                  <p class="font-semibold">rafa290498.silva@gmail.com</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+                  <i class="fas fa-phone text-primary"></i>
+                </div>
+                <div>
+                  <p class="text-gray-300">Telefone</p>
+                  <p class="font-semibold">+55 (11) 98462-2113</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+                  <i class="fas fa-map-marker-alt text-primary"></i>
+                </div>
+                <div>
+                  <p class="text-gray-300">Localização</p>
+                  <p class="font-semibold">São Paulo, Brasil</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex space-x-4 mt-8">
+              <a href="#" class="w-12 h-12 bg-primary hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="w-12 h-12 bg-primary hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="w-12 h-12 bg-primary hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="w-12 h-12 bg-primary hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div class="glass p-8 rounded-2xl">
+            <form class="space-y-6">
+              <div>
+                <label class="block text-gray-300 mb-2">Nome</label>
+                <input type="text" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="Seu nome completo">
+              </div>
+              <div>
+                <label class="block text-gray-300 mb-2">Email</label>
+                <input type="email" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="seu@email.com">
+              </div>
+              <div>
+                <label class="block text-gray-300 mb-2">Mensagem</label>
+                <textarea rows="5" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="Como posso ajudar?"></textarea>
+              </div>
+              <button type="submit" class="w-full bg-primary hover:bg-blue-600 text-white py-3 rounded-lg font-semibold transition-colors transform hover:scale-105">
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+      <div class="container mx-auto px-6">
+        <div class="text-center">
+          <div class="text-2xl font-bold text-primary mb-4">
+            Portfólio<span class="text-secondary">.</span>
+          </div>
+          <p class="text-gray-400 mb-8">Desenvolvendo o futuro, um código de cada vez</p>
+          <div class="flex justify-center space-x-6 mb-8">
+            <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+              <i class="fab fa-linkedin-in text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+              <i class="fab fa-github text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+              <i class="fab fa-twitter text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+              <i class="fab fa-instagram text-xl"></i>
+            </a>
+          </div>
+          <div class="border-t border-gray-800 pt-8">
+            <p class="text-gray-500">© 2025 RAFAEL SILVA . Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript -->
+    <script>
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+      // Animation on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, observerOptions);
+
+      // Observe elements for animation
+      document.querySelectorAll('.animate-fade-in-up').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        observer.observe(el);
+      });
+
+      // Mobile menu toggle
+      const mobileMenuButton = document.querySelector('button.md\\:hidden');
+      const navMenu = document.querySelector('.hidden.md\\:flex');
+      mobileMenuButton.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+        navMenu.classList.toggle('flex');
+        navMenu.classList.toggle('flex-col');
+        navMenu.classList.toggle('absolute');
+        navMenu.classList.toggle('top-full');
+        navMenu.classList.toggle('left-0');
+        navMenu.classList.toggle('w-full');
+        navMenu.classList.toggle('bg-gray-900');
+        navMenu.classList.toggle('p-6');
+        navMenu.classList.toggle('space-y-4');
+      });
+
+      // Form validation
+      const contactForm = document.querySelector('form');
+      if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const formData = new FormData(contactForm);
+          const data = Object.fromEntries(formData);
+          // Simulate form submission
+          console.log('Form submitted:', data);
+          // Show success message
+          alert('Mensagem enviada com sucesso! Entrarei em contato em breve.');
+          contactForm.reset();
+        });
+      }
+
+      // Add scroll progress indicator
+      window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.body.offsetHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+        // Create or update progress bar
+        let progressBar = document.getElementById('scroll-progress');
+        if (!progressBar) {
+          progressBar = document.createElement('div');
+          progressBar.id = 'scroll-progress';
+          progressBar.style.position = 'fixed';
+          progressBar.style.top = '0';
+          progressBar.style.left = '0';
+          progressBar.style.height = '3px';
+          progressBar.style.background = 'linear-gradient(90deg, #3B82F6, #10B981)';
+          progressBar.style.zIndex = '1000';
+          progressBar.style.transition = 'width 0.2s ease';
+          document.body.appendChild(progressBar);
+        }
+        progressBar.style.width = scrollPercent + '%';
+      });
+    </script>
+  </body>
+</html>
