@@ -1,45 +1,48 @@
-# PROJETO-SITE01
-🌐 Portfólio | Rafael Silva
+🌐 Portfolio | Rafael Silva
 
-Este é o meu portfólio pessoal, desenvolvido para apresentar minhas habilidades, projetos e informações de contato como desenvolvedor.
-O site foi construído com HTML, Tailwind CSS e JavaScript, trazendo interatividade, design responsivo e animações modernas.
+Personal portfolio website built to showcase my developer skills, projects and contact information. The site is implemented with HTML, Tailwind CSS, and JavaScript, offering interactivity, responsive design, and modern animations.
 
-🚀 Funcionalidades
+🚀 Features
 
-🎨 Design Moderno com Glassmorphism e gradientes.
+Modern design with glassmorphism and gradient accents.
 
-🌌 Animações customizadas (fade-in, floating e smooth scroll).
+Custom animations (fade-in, floating effects, smooth scrolling).
 
-📱 Layout responsivo adaptável a diferentes dispositivos.
+Responsive layout that adapts to different screen sizes.
 
-🌙 Modo claro/escuro (já preparado para melhorias futuras).
+Light / Dark mode ready for future enhancements.
 
-📊 Seções organizadas:
+Organized sections:
 
-- Início (Hero)
+Home (Hero)
 
-- Sobre Mim
+About
 
-- Habilidades Tecnológicas
+Technical Skills
 
-- Projetos Recentes
+Recent Projects
 
-- Contato
+Contact
 
-📨 Formulário de contato com validação simples em JavaScript.
+Contact form with client-side validation (JavaScript).
 
-📈 Indicador de progresso da rolagem no topo da página.
+Scroll progress indicator at the top of the page.
 
-📱 Menu mobile interativo.
+Interactive mobile menu for small screens.
 
-🛠️ Tecnologias Utilizadas
+🛠️ Built with
 
-- HTML5 – Estrutura da aplicação.
+HTML5 — site structure.
 
-- Tailwind CSS – Estilização moderna e responsiva.
+Tailwind CSS — modern responsive styling.
 
-- JavaScript (ES6+) – Interatividade e animações.
+JavaScript (ES6+) — interactivity and animations.
 
-- Font Awesome – Ícones personalizados.
+Font Awesome — icons.
 
-- Google Fonts (Inter) – Tipografia elegante e legível.
+Google Fonts (Inter) — clean, readable typography.
+
+🔗 Live Demo
+
+Deployed via GitHub Pages:
+https://rafaelsilvaa29.github.io/PROJETO-SITE01/
