@@ -45,4 +45,4 @@ Google Fonts (Inter) — clean, readable typography.
 🔗 Live Demo
 
 Deployed via GitHub Pages:
-https://rafaelsilvaa29.github.io/PROJETO-SITE01/
+[https://rafaelsilvaa29.github.io/PROJETO-SITE01/](https://rafaelsilvaa29.github.io/PROJETO-SITE01/)
